@@ -2,7 +2,7 @@
 @echo off
 
 :: Add custom name in IDM license info, prefer to write it in English and/or numeric in below line after = sign,
-set name=Matt Walsh
+set name=
 
 
 
@@ -421,7 +421,7 @@ echo:
 echo Applying registration details...
 echo:
 
-If not defined name set name=Piash
+If not defined name set name=Biezetta
 
 set "reg=HKCU\SOFTWARE\DownloadManager /v FName /t REG_SZ /d "%name%"" & call :_rcont
 set "reg=HKCU\SOFTWARE\DownloadManager /v LName /t REG_SZ /d """ & call :_rcont
